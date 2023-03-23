@@ -16,5 +16,4 @@ Some specific topics in physics that could be explored using our proposed web-ba
 
 The topic I would explain with the canva is:
     Temperature Vs. Pressure showing the relationship between temperature and pressure in any kind of gas, such as helium, nitrogen, oxygen , etc. This would allow users to compare the behavior of different gases under different conditions(Temperature and Pressure) and see how their properties affect their behavior. 
-
     Apart of the interactive canva the project have an explanation of the relationship of each different type of gas with the temperature and pressure.
