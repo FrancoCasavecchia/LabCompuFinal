@@ -45,16 +45,76 @@ header{
     justify-content: space-between;
 }
 
+/*ORG*/
+
 .navbar .org a{
     font-size: 3rem;
     font-weight: solid;
     cursor: pointer;
+    letter-spacing: 2px;
+    text-decoration: none;
+    position: relative;
 }
+
+
+.navbar .org a:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: crimson;
+    /*Animation*/
+    transform-origin: right ;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.navbar .org a:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/*LINKS*/
 
 .navbar .links{
     display: flex;
     gap: 2rem;
 }
+.navbar .links a{
+    font-size: 1rem;
+    font-weight: solid;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar .links a:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: crimson;
+    /*Animation*/
+    transform-origin: right ;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.navbar .links a:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/*ACTION BTN*/
 
 .action_btn{
     background-color: crimson;
@@ -69,10 +129,15 @@ header{
 }
 
 .action_btn:hover{
-    scale: 1.05;
+    font-weight: bold;
+    scale: 1.40;
+    transition: scale 0.2s ease-in-out;
     color: #fff;
 }
 
 .action_btn:active{
     scale: 0.95;
 }
+
+
+
