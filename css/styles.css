@@ -1,14 +1,19 @@
+/*COLORES*/
+:root {
+    --primary-color: crimson
+  }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: roboto, arial, helvetica, sans-serif;
 }
 
 body {
     height: 100vh;
     background-color: #000;
-    background-image: url(/img/ivan-bandura-SrARQBX_jhc-unsplash\ \(1\).jpg);
+    background-image: url(/img/pawel-czerwinski-prMn9KINLtI-unsplash.jpg);
     background-size:cover;
     background-position: center;
 }
@@ -24,7 +29,7 @@ a{
 }
 
 a:hover{
-    color: crimson;
+    color: var(--primary-color);
 }
 
 
@@ -33,6 +38,7 @@ a:hover{
 header{
     position: relative;
     padding: 0 2rem;
+
 }
 
 .navbar{
@@ -65,7 +71,7 @@ header{
     left: 0;
     height: 5px;
     width: 100%;
-    background: crimson;
+    background: var(--primary-color);
     /*Animation*/
     transform-origin: right ;
     transform: scaleX(0);
@@ -101,7 +107,7 @@ header{
     left: 0;
     height: 2px;
     width: 100%;
-    background: crimson;
+    background: var(--primary-color);
     /*Animation*/
     transform-origin: right ;
     transform: scaleX(0);
@@ -117,7 +123,7 @@ header{
 /*ACTION BTN*/
 
 .action_btn{
-    background-color: crimson;
+    background-color: var(--primary-color);
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
@@ -140,4 +146,60 @@ header{
 }
 
 
+/*FOOTER*/
 
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.cont_footer{
+    display: flex;
+    align-items: center;
+    justify-content: centre;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cont_footer h3{
+    font-size: 1.5rem;
+    font-weight: solid;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-decoration: none;
+    position: relative;
+}
+
+.cont_footer p{
+    max-width: 500px;
+    margin: 5px auto;
+    line-height: 28px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: monospace;
+}
+
+.links{
+    padding: 10px;   
+}
+
+.bottom_footer{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.bottom_footer{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    opacity: .7;
+}
